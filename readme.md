@@ -1,3 +1,9 @@
+## pre development steps
+
+In order to keep your configuration file safe. After cloning the repository execute the following command
+
+    git update-index --assume-unchanged backend/config/__init__.py
+
 ## installation 
 
     python -m pip install virtualenv
