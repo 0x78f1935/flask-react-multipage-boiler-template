@@ -1,5 +1,4 @@
 import secrets
-import os
 
 
 class ProductionConfig(object):
