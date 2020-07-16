@@ -214,4 +214,4 @@ updatePYPI_*.*
 
 backend/config/*
 backend/static/react/*
-./package-lock.json
+package-lock.json
