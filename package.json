@@ -1,0 +1,40 @@
+{
+  "name": "python-react-multi-page-boiler-template",
+  "version": "1.0.0",
+  "description": "Multipage application",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --progress --config webpack.config.js",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "keywords": [
+    "python",
+    "react",
+    "npm",
+    "webpack"
+  ],
+  "author": "0x78f1935",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^3.12.0",
+    "webpack-manifest-plugin": "^2.2.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.2"
+  }
+}

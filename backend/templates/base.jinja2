@@ -1,0 +1,41 @@
+{% block document %}
+<html {% block html_attribs %}{% endblock html_attribs %}>
+    {% block html %}
+        <head>
+            {% block head %}
+                <title>{% block title %}{% if title %} {{title}} {% else %} 0x78f1935 {% endif %}{% endblock title %}</title>
+    
+                {% block icon %}
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+                {% endblock icon %}
+    
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                {% block meta %}
+                {% endblock meta %}
+
+                {% block styles %}
+                {% endblock styles %}
+            {% endblock head %}
+        </head>
+        <body {% block body_attribs %}{% endblock body_attribs %}>
+            {% block body %}
+
+                {% block navbar %}
+                    <div id="navbar"></div>
+                {% endblock navbar %}      
+
+                {% block content %}
+                {% endblock content %}
+
+                {% block base_scripts %}
+                    <script src="{{ 'navbar.js' | webpack }}" type="text/javascript"></script>
+                {% endblock base_scripts %}
+
+                {% block scripts %}
+                {% endblock scripts %}
+                
+            {% endblock body %}
+        </body>
+    {% endblock html %}
+</html>
+{% endblock document %}
