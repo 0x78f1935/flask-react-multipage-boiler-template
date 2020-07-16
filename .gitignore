@@ -210,8 +210,8 @@ venv.bak/
 
 # Package
 updatePYPI_*.*
-# .vscode
+.vscode
 
-#backend/config/*
+backend/config/*
 backend/static/react/*
 ./package-lock.json
