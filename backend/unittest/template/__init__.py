@@ -10,7 +10,7 @@ class BoilerUnitTestTemplate(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_response(self):
+    def test_homepage(self):
         """
         Checks if homepage exists
         """
@@ -18,7 +18,7 @@ class BoilerUnitTestTemplate(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         print("* Internal pages are available!")
 
-    def test_user_model(self):
+    def test_aboutpage(self):
         """
         Checks if about page exists
         """

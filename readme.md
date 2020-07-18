@@ -1,3 +1,5 @@
+![Build Status](https://travis-ci.com/0x78f1935/flask-react-multipage-boiler-template.svg?branch=master)
+
 ## pre development steps
 
 In order to keep your configuration file safe. After cloning the repository execute the following command
