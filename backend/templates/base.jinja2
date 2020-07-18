@@ -19,6 +19,12 @@
         </head>
         <body {% block body_attribs %}{% endblock body_attribs %}>
             {% block body %}
+                {% block navbar %}
+                    <div id="navbar"></div>
+                {% endblock navbar %}      
+
+                {% block content %}
+                {% endblock content %}
 
                 {% block base_scripts %}
                     {% if g.data %}
@@ -28,13 +34,6 @@
                     {% endif %}
                     <script src="{{ 'navbar.js' | webpack }}" type="text/javascript"></script>
                 {% endblock base_scripts %}
-
-                {% block navbar %}
-                    <div id="navbar"></div>
-                {% endblock navbar %}      
-
-                {% block content %}
-                {% endblock content %}
 
                 {% block scripts %}
                 {% endblock scripts %}

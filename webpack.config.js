@@ -8,7 +8,7 @@ const BUILD_PATH = path.resolve(ROOT_PATH, 'backend/static/react');
 const config = {
     devtool: 'eval-source-map',
     entry: {
-        "index": __dirname + "/frontend/views/index.jsx",
+        "homepage": __dirname + "/frontend/views/homepage.jsx",
         "about": __dirname + "/frontend/views/about.jsx",
 
         "navbar": __dirname + "/frontend/components/navbar.jsx",
@@ -52,6 +52,17 @@ const config = {
                 {
                     test: /\.css$/,
                     use: [ 'style-loader', 'css-loader' ]
+                },
+                {
+                    test: /\.(png|jpe?g|gif)$/i,
+                    use: [
+                      {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[contenthash].[ext]',
+                        }
+                      },
+                    ],
                 },
             ]
         }]
