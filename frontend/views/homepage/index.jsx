@@ -8,6 +8,7 @@ export default class HomePage extends React.Component {
         return (
             <Container style={{ marginTop: '15px'}}>
                 <Card className="text-center">
+                    <Card.Footer className="text-muted"><div id="clock"></div></Card.Footer>
                     <Card.Body>
                         <Card.Title>Multi Page Flask React Boiler Template</Card.Title>
                         <Card.Text>
