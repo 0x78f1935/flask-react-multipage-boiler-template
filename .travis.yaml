@@ -1,0 +1,21 @@
+matrix:
+    include:
+      - language: node_js
+        node_js:
+            - "12.17"
+        install:
+            - npm install
+        script:
+            - npm build
+
+      - language: python
+        python:
+            - "3.8"
+            - "3.8-dev"
+        env:
+            - FLASK_APP=./webserver.py
+        install:
+            - python -m pip install -r ./requirements.txt
+        script:
+            - python -m flask
+            - python -m flask unit test

@@ -24,6 +24,8 @@ class Webserver(object):
         print("* Views configured and initalized ...")
         self.__init_db_modules()
         print("* Database mapping applied ...")
+        self.__update_jinja()
+        print("* Jinja2 updated ...")
         self.__webpack_to_jinja()
         print("* Jinja2 extended ...")
         print("* Application ready for use ...")
@@ -59,6 +61,17 @@ class Webserver(object):
         Therefor we call those modules here.
         """
         pass
+
+    def __update_jinja(self):
+        """
+        Updates jinja with custom python commands. Each new command will be callable
+        in the jinja templates.
+        """
+        from backend._jinja import CustomFunctions
+        self.server.jinja_env.globals.update(
+            datenow=CustomFunctions.datenow,
+            get_debug_value=CustomFunctions.get_debug_bool,
+        )
 
     def _get_pathlib(self, *args):
         return pathlib.Path(pathlib.Path(__file__).resolve().parent, *args)
