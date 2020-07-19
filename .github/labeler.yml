@@ -1,0 +1,19 @@
+# Add 'repo' label to any root file changes
+repo:
+    - ./*
+    
+  # Add '@domain/core' label to any change within the 'core' package
+  @domain/core:
+    - webpack.config.js
+    - backend/*
+  
+  # Add 'test' label to any change to *.spec.js files within the source dir
+  test:
+    - backend/unittest/*
+
+  # Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
+  frontend:
+  - any: ['*.jsx', '*.jinja2']
+
+  backend:
+  - any: ['*.py']
