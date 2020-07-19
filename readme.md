@@ -1,4 +1,9 @@
-![Build Status](https://travis-ci.com/0x78f1935/flask-react-multipage-boiler-template.svg?branch=master)
+[![Build Status](https://img.shields.io/github/forks/0x78f1935/flask-react-multipage-boiler-template.svg?style=for-the-badge)](https://github.com/0x78f1935/flask-react-multipage-boiler-template)
+[![Build Status](https://img.shields.io/github/stars/0x78f1935/flask-react-multipage-boiler-template.svg?style=for-the-badge)](https://github.com/0x78f1935/flask-react-multipage-boiler-template)
+[![License](https://img.shields.io/github/license/0x78f1935/flask-react-multipage-boiler-template.svg?style=for-the-badge)](https://github.com/0x78f1935/flask-react-multipage-boiler-template)
+[![Build Status](https://img.shields.io/travis/0x78f1935/flask-react-multipage-boiler-template/master.svg?style=for-the-badge)](https://travis-ci.org/0x78f1935/flask-react-multipage-boiler-template)
+[![Dependency Status](https://img.shields.io/david/0x78f1935/flask-react-multipage-boiler-template.svg?style=for-the-badge)](https://david-dm.org/0x78f1935/flask-react-multipage-boiler-template)
+[![peerDependency Status](https://img.shields.io/david/peer/0x78f1935/flask-react-multipage-boiler-template.svg?style=for-the-badge)](https://david-dm.org/0x78f1935/flask-react-multipage-boiler-template#info=devDependencies)
 
 ## pre development steps
 
