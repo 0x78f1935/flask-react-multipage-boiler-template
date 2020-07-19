@@ -12,6 +12,7 @@ export default class NavbarComponent extends React.Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/marbles">WebGame</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
                 <NavDropdown title="Placeholder" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Placeholder1</NavDropdown.Item>

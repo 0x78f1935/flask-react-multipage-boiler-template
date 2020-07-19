@@ -14,6 +14,7 @@ const config = {
         "navbar": __dirname + "/frontend/components/navbar.jsx",
 
         "clock": __dirname + "/frontend/widgets/clock.jsx",
+        "marble_game": __dirname + "/frontend/games/marble_game.jsx"
     },
     output: {
         path: BUILD_PATH,

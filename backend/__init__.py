@@ -49,8 +49,8 @@ class Webserver(object):
         Every view is a class which needs to be injected into the webserver
         before the view is available to visit.
         """
-        from backend.views.index import IndexView
-        IndexView.register(self.server, route_base='/')
+        from backend.views.index import BoilerView
+        BoilerView.register(self.server, route_base='/')
 
     def __init_db_modules(self):
         """
