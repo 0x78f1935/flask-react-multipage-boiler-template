@@ -215,3 +215,5 @@ updatePYPI_*.*
 backend/config/*
 backend/static/react/*
 package-lock.json
+
+!backend/static/webGL/Build
