@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import Unity, { UnityContent } from "react-unity-webgl";
 
 const unityContent = new UnityContent(
-    "static/webGL/Build/Build.json",
-    "static/webGL/Build/UnityLoader.js"
+    "static/webGL/Marbles/Build.json",
+    "static/webGL/Marbles/UnityLoader.js"
 );
 
 window.addEventListener("load",

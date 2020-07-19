@@ -24,3 +24,10 @@ class BoilerUnitTestTemplate(unittest.TestCase):
         """
         response = self.server.get('/about')
         self.assertEqual(response.status_code, 200)
+
+    def test_marbles(self):
+        """
+        Checks if marble page exists
+        """
+        response = self.server.get('/marbles')
+        self.assertEqual(response.status_code, 200)
