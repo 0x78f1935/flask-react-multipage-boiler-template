@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Card} from 'react-bootstrap';
+import Clock from '../../widgets/clock';
 
 
 export default class HomePage extends React.Component {
@@ -8,7 +9,7 @@ export default class HomePage extends React.Component {
         return (
             <Container style={{ marginTop: '15px'}}>
                 <Card className="text-center">
-                    <Card.Footer className="text-muted"><div id="clock"></div></Card.Footer>
+                    <Card.Footer className="text-muted"><Clock/></Card.Footer>
                     <Card.Body>
                         <Card.Title>Multi Page Flask React Boiler Template</Card.Title>
                         <Card.Text>

@@ -11,14 +11,18 @@ In order to keep your configuration file safe. After cloning the repository exec
 
     git update-index --assume-unchanged backend/config/__init__.py
 
-## installation 
+## installation Python 3.6 >
 
     python -m pip install virtualenv
     python -m virtualenv venv
 
-activate virtuale environment
+activate virtuale environment windows
 
     .\venv\Scripts\activate
+
+activate virtuale environment debian
+
+    source venv/bin/activate
 
 install requirements
 
@@ -33,9 +37,14 @@ use hot-reload compile (for development purpose)
 
     npm run watch
 
-start python server
+start python server windows
 
     set FLASK_APP=webserver.py
+    flask run
+
+start python server debian
+
+    export FLASK_APP=webserver.py
     flask run
 
 You can also use the provided visual studio code debug configuration. Just make sure to select the virtualenvironemnt in your IDE
